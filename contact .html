@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body {font-family: Arial, Helvetica, sans-serif;}
+* {box-sizing: border-box;}
+h3{
+  text-align: center;
+}
+
+
+input[type=text], select, textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+}
+
+input[type=submit] {
+  background-color: #04AA6D;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+input[type=submit]:hover {
+  background-color: #45a049;
+}
+
+.container {
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 20px;
+}
+</style>
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+</head>
+<body>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+  <nav class="navbar navbar-expand-lg navbar-light bg-warning " >
+    <div class="container-fluid d-flex justify-content-around">
+      <div class="ms-5">
+        <a class="navbar-brand" href="#">PR Skincare</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      </div>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0 w-50 justify-content-end">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="aboutus.html">Aboutus</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              services
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <li><a class="dropdown-item" href="delivery.html">Freedelivery</a></li>
+              <li><a class="dropdown-item" href="home.html">OrganicProducts</a></li>
+              <li><hr class="dropdown-divider"></li>
+              <li><a class="dropdown-item" href="nature.html">NatureProducts</a></li>
+            </ul>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="contact .html">Contact</a>
+          </li>
+          
+        </ul>
+        <form class="d-flex">
+          <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+          <button class="btn btn-outline-success" type="submit">Login</button>
+        </form>
+      </div>
+    </div>
+  </nav>
+
+<h3>Order</h3>
+
+<div class="container">
+  <form action="/action_page.php">
+    <label for="fname"> Name</label>
+    <input type="text" id="fname" name="firstname" placeholder="Your name..">
+
+    <label for="lname">Your Contact No</label>
+    <input type="text" id="lname" name="lastname" placeholder="Enter Your Phone Number..">
+
+    <label for="country">District</label>
+    <select id="country" name="District">
+      <option value="australia">Coimbatore</option>
+      <option value="canada">Erode</option>
+      <option value="usa">Nilgiris</option>
+      <option value="usa">Karur</option>
+      <option value="usa">Theni</option>
+      <option value="usa">Thootukudi</option>
+      <option value="usa">Krishnagiri</option>
+      <option value="usa">Dharmapuri</option>
+      <option value="usa">Chengalpattu</option>
+      <option value="usa">Tiruppur</option>
+      <option value="usa">Namakkal</option>
+      <option value="usa">Salem</option>
+      <option value="usa">Pudukkottai</option>
+      <option value="usa">Tenkasi</option>
+      <option value="usa">Kanayakumari</option>
+      <option value="usa">Dindigal</option>
+      <option value="usa">Kallakurichi</option>
+      <option value="usa">Chennai</option>
+    </select>
+
+    <label for="Available Items">Items</label>
+    <select id ="Products Name" name="Organic Products">
+      <option value="Orange Product">Orange</option>
+      <option value="Beet powder">Beetroot</option>
+      <option value="Cucumber">Cucumber</option>
+      <option value="Aloevera">Aloevera</option>
+      <option value="Papaya">Papaya</option>
+      <option value="Rosewater">Rosewater</option>
+    </select>
+
+    <button type="button" onclick="reply()">submit</button>
+        </form>
+        
+  </form>
+</div>
+<a href="order.html"></a>
+<script src="style.js"></script>
+</body>
+</html>
